@@ -24,3 +24,6 @@ bo.shiftwidth = 4       -- < & > moves 4 spaces
 bo.expandtab = true     -- tab are spaces
 bo.textwidth = 79       -- break line at 79
 
+vim.cmd([[
+	autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2 
+]])

@@ -32,6 +32,12 @@ return require('packer').startup(function()
         config = function() require'nvim-tree'.setup {} end
     }
 
+    -- Nvim treesitter - better syntaxhighlighting
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- We recommend updating the parsers on update
+
+    -- Autopairs
+    use 'windwp/nvim-autopairs'
+
     -- Statusline
     use 'windwp/windline.nvim'
 
