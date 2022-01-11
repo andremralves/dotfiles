@@ -106,3 +106,7 @@
   require('lspconfig')['html'].setup {
     capabilities = capabilities
   }
+  -- css 
+  require('lspconfig')['cssls'].setup {
+    capabilities = capabilities
+  }

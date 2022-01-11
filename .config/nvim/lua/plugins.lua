@@ -43,5 +43,6 @@ return require('packer').startup(function()
 
     -- Theme
     use 'folke/tokyonight.nvim'
+    use {'dracula/vim', as = 'dracula'}
     
 end)
