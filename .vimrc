@@ -5,13 +5,14 @@ set number				            " show numbers
 set laststatus=2			        " show status
 set showcmd                 		" show commands 
 set wildmenu                		" show menu
+set cursorline                      " highlight the cursor line
+set splitright                      " new splits are on the right side
 
 " ---- FIND FILES ----
 set path+=**
 
 " ---- TABS ----
 set wrap
-set textwidth=79
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -28,6 +29,14 @@ Plug 'preservim/nerdtree'
 " Statusline
 Plug 'itchyny/lightline.vim'
 
+" Auto-pair 
+Plug 'jiangmiao/auto-pairs'
+
+" " snippets 
+" Plug 'honza/vim-snippets'
+" " Track the engine.
+" Plug 'SirVer/ultisnips'
+
 " Comments
 Plug 'tpope/vim-commentary'
 
@@ -41,6 +50,10 @@ call plug#end()
 
 " ---- PLUGINS CONFIG ----
 source ~/.vim/plugins-config/coc-nvim.vim
+source ~/.vim/plugins-config/lightline.vim
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " ---- COLOR ----
 
@@ -70,4 +83,10 @@ nnoremap <leader>r :edit <bar> echo "File reloaded!"<CR>
 " Source vimrc
 nnoremap <leader>s :source $MYVIMRC <bar> echo "vimrc sourced!"<CR> 
 " Open terminal
-nnoremap <leader><CR> :terminal<CR>
+nnoremap <leader><CR> :vertical terminal<CR>
+" No wrap
+nnoremap <leader>w :set wrap!<CR>
+
+
+" ---- AUTOCOMMANDS ----
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
