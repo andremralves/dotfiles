@@ -11,8 +11,14 @@ return require('packer').startup({function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-    -- Completions
+    -- LSP
     use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client 
+    use 'williamboman/nvim-lsp-installer' -- Lsp installer
+
+    use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+
+    -- An inplementation of popup API
+    use 'nvim-lua/popup.nvim'
 
     -- Completion engine
     use 'hrsh7th/cmp-nvim-lsp'
@@ -23,6 +29,7 @@ return require('packer').startup({function()
 
     -- For luasnip users.
     use 'L3MON4D3/LuaSnip'
+    use "rafamadriz/friendly-snippets"
     use 'saadparwaiz1/cmp_luasnip'
 
     -- Java jdtls support
@@ -50,6 +57,9 @@ return require('packer').startup({function()
     -- Statusline
     use 'NTBBloodbath/galaxyline.nvim'
     use 'windwp/windline.nvim'
+
+    -- Git
+    use 'lewis6991/gitsigns.nvim'
 
     -- Theme
     -- use 'folke/tokyonight.nvim'
