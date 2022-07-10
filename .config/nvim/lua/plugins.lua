@@ -62,8 +62,8 @@ return require('packer').startup({function()
     use 'lewis6991/gitsigns.nvim'
 
     -- Theme
-    -- use 'folke/tokyonight.nvim'
-    use {'dracula/vim', as = 'dracula'}
+    use 'folke/tokyonight.nvim'
+    --use {'dracula/vim', as = 'dracula'}
     
 end,
 config = {

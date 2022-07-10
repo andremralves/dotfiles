@@ -108,8 +108,10 @@ cmp.setup({
     { name = 'path' }, 
   }),
 
-  documentation = {
-    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+  window = {
+      documentation = {
+        border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+      },
   },
 
   experimental = {
