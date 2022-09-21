@@ -62,8 +62,17 @@ return require('packer').startup({function()
     use 'lewis6991/gitsigns.nvim'
 
     -- Theme
-    use 'folke/tokyonight.nvim'
+    --use 'folke/tokyonight.nvim'
     --use {'dracula/vim', as = 'dracula'}
+    --use 'overcache/NeoSolarized'
+    use 'shaunsingh/nord.nvim'
+
+
+    -- Formatting
+    use 'sbdchd/neoformat'
+
+    -- Show RGB colors
+    use 'norcalli/nvim-colorizer.lua'
     
 end,
 config = {
