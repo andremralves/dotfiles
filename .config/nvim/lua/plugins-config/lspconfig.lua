@@ -36,8 +36,19 @@ end
 -- lsp to use
 -- kotlin_language_server
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-local servers = { 'pyright', 'html', 'cssls', 'tsserver', 'clangd'}
+local servers = { 'pyright', 'html', 'cssls', 'tsserver', 'clangd', 'intelephense'}
 for _, lsp in pairs(servers) do
+  if lsp == 'intelephense' then
+    require('lspconfig')[lsp].setup {
+      on_attach = on_attach,
+      single_file_support = true,
+      flags = {
+        -- This will be the default in neovim 0.7+
+        debounce_text_changes = 150,
+      },
+      capabilities = capabilities
+    }
+  else
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,
     flags = {
@@ -46,4 +57,5 @@ for _, lsp in pairs(servers) do
     },
     capabilities = capabilities
   }
+  end
 end
