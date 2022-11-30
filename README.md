@@ -11,4 +11,4 @@ bash bootstrap.sh
 
 ### TODO
 
-- [ ] Create a python version of bootstrap.sh
+- [x] Create a python version of bootstrap.sh
