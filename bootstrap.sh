@@ -13,8 +13,8 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     rm -rf $HOME/.tmux.conf
 
     # Create symbolic links
-    ln --symbolic -v $(pwd)/.config/nvim $config/nvim
-    ln --symbolic -v $(pwd)/.config/alacritty $config/alacritty
-    ln --symbolic -v $(pwd)/.tmux.conf $HOME/.tmux.conf
+    ln --symbolic -v $(pwd)/nvim $config/nvim
+    ln --symbolic -v $(pwd)/alacritty $config/alacritty
+    ln --symbolic -v $(pwd)/tmux.conf $HOME/.tmux.conf
 fi;
 
