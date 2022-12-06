@@ -29,7 +29,7 @@ vim.cmd([[
 	autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2 
 	autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2 
     " Background transparency
-    au ColorScheme * hi Normal ctermbg=none guibg=none
-    au ColorScheme * hi SignColumn guibg=none
+    "au ColorScheme * hi Normal ctermbg=none guibg=none
+    "au ColorScheme * hi SignColumn guibg=none
     "au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 ]])
