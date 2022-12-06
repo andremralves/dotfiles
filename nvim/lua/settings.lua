@@ -16,6 +16,7 @@ o.splitright = true
 wo.number = true
 wo.wrap = true
 wo.cursorline = true 	-- highlight current line
+wo.relativenumber = true
 
 -- buffer-local options
 o.tabstop = 4          -- number of visual spaces per TAB
