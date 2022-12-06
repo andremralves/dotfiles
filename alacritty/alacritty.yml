@@ -7,7 +7,8 @@
 ## Import files (Colors, Fonts, Etc)
 import:
   #- ~/.config/alacritty/tokyonight-storm.yml
-  - ~/.config/alacritty/nord.yml
+  - ~/.config/alacritty/tokyonight-moon.yml
+  #- ~/.config/alacritty/nord.yml
   - ~/.config/alacritty/fonts.yml
 
 ## Set environment variables
@@ -17,7 +18,7 @@ env:
 ## Terminal window settings
 window:
   ## Background opacity
-  opacity: 0.9
+  opacity: 1
   dimensions:
     columns: 84
     lines: 26
