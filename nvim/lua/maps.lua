@@ -13,7 +13,7 @@ map('n', '<leader><esc>', ':nohlsearch<cr>', options)
 map('n', '<leader>e', ':NvimTreeToggle<cr>', options)
 
 -- Open term
-map('n', '<leader><cr>', ':vsplit term://zsh<cr>', options)
+map('n', '<leader><cr>', ':ToggleTerm<cr>', options)
 
 -- Move up/down editor lines
 map('n', 'k', 'gk', options)
@@ -25,20 +25,20 @@ map('n', 'gj', 'j', options)
 map('n', 'gV', '`[v`]', options)
 
 -- Find files using Telescope command-line sugar.
-map('n', '<leader>ff' , '<cmd>Telescope find_files<cr>', options) 
-map('n', '<leader>fg' , '<cmd>Telescope live_grep<cr>', options) 
-map('n', '<leader>fb' , '<cmd>Telescope buffers<cr>', options) 
-map('n', '<leader>fh' , '<cmd>Telescope help_tags<cr>', options) 
+map('n', '<leader>ff' , '<cmd>Telescope find_files<cr>', options)
+map('n', '<leader>fg' , '<cmd>Telescope live_grep<cr>', options)
+map('n', '<leader>fb' , '<cmd>Telescope buffers<cr>', options)
+map('n', '<leader>fh' , '<cmd>Telescope help_tags<cr>', options)
 
 -- Exit terminal on esc
 map('t', '<esc>', '<C-\\><C-n>', options)
 
 -- Window movement
-map('n', '<c-h>' , '<c-w><c-h>', options) 
-map('n', '<c-j>' , '<c-w><c-j>', options) 
-map('n', '<c-k>' , '<c-w><c-k>', options) 
-map('n', '<c-l>' , '<c-w><c-l>', options) 
+map('n', '<c-h>' , '<c-w><c-h>', options)
+map('n', '<c-j>' , '<c-w><c-j>', options)
+map('n', '<c-k>' , '<c-w><c-k>', options)
+map('n', '<c-l>' , '<c-w><c-l>', options)
 
 -- Copy to clipboard
-map('n', '<leader>y' , '"+y', options) 
-map('v', '<leader>y' , '"+y', options) 
+map('n', '<leader>y' , '"+y', options)
+map('v', '<leader>y' , '"+y', options)
