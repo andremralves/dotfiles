@@ -2,11 +2,14 @@
 
 ### How to setup
 
-1. Clone this repository
-2. Go to the root folder and run the following code
+1. Clone this repository in your home directory
+2. cd to the cloned project 
+3. use stow to install the configurations 
+
+Example:
 
 ```
-bash bootstrap.sh
+stow nvim
 ```
 
 ### TODO
