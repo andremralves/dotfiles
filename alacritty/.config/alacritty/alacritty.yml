@@ -18,7 +18,7 @@ env:
 ## Terminal window settings
 window:
   ## Background opacity
-  opacity: 0.5
+  opacity: 0.8
   dimensions:
     columns: 84
     lines: 26

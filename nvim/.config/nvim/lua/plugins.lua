@@ -15,10 +15,10 @@ return require('packer').startup({function()
     use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client 
     use 'williamboman/nvim-lsp-installer' -- Lsp installer
 
-    use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+    use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
     -- An inplementation of popup API
-    use 'nvim-lua/popup.nvim'
+    -- use 'nvim-lua/popup.nvim'
 
     -- Completion engine
     use 'hrsh7th/cmp-nvim-lsp'
@@ -33,7 +33,7 @@ return require('packer').startup({function()
     use 'saadparwaiz1/cmp_luasnip'
 
     -- Java jdtls support
-    use 'mfussenegger/nvim-jdtls'
+    -- use 'mfussenegger/nvim-jdtls'
 
     -- Nvim Tree - Explorer
     use {
@@ -67,9 +67,13 @@ return require('packer').startup({function()
     --use 'overcache/NeoSolarized'
     --use 'shaunsingh/nord.nvim'
 
+    -- Terminal
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
 
     -- Formatting
-    use 'sbdchd/neoformat'
+    -- use 'sbdchd/neoformat'
 
     -- Show RGB colors
     use 'norcalli/nvim-colorizer.lua'
