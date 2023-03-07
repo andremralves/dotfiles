@@ -1,6 +1,6 @@
 require("tokyonight").setup({
   -- use the night style
-  style = "moon",
+  style = "night",
   -- disable italic for functions
   styles = {
     functions = {}

@@ -77,7 +77,12 @@ return require('packer').startup({function()
 
     -- Show RGB colors
     use 'norcalli/nvim-colorizer.lua'
-    
+
+    -- Startup
+    use {
+    'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' },
+}
 end,
 config = {
   display = {

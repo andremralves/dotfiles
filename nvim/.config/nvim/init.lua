@@ -9,6 +9,7 @@ require('plugins-config/nvim-cmp')          -- Autocompletion
 require('plugins-config/nvim-tree')         -- Side tree
 require('plugins-config/galaxyline')        -- Statusline
 require('plugins-config/toggleterm')        -- Terminal sessions
+require('plugins-config/alpha')             -- Startup
 
 -- Colorscheme
 require('plugins-config/tokyonight')
