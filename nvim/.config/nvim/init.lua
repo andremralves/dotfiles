@@ -19,6 +19,6 @@ require('plugins-config/tokyonight')
 
 require('plugins-config/nvim-treesitter')	-- Better Syntax highlighting 
 require('plugins-config/gitsigns')	        -- Git
-require('plugins-config/neoformat')	        -- Formatter 
+--require('plugins-config/neoformat')	        -- Formatter 
 require('nvim-autopairs').setup{}
 require'colorizer'.setup()

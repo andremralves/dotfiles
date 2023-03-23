@@ -27,6 +27,8 @@ o.textwidth = 79       -- break line at 79
 
 vim.cmd([[
 	autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2 
+	autocmd FileType typescript setlocal shiftwidth=2 tabstop=2 softtabstop=2 
+	autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2 softtabstop=2 
 	autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2 
 
     " set sepell checker
