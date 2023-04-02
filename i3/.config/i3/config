@@ -57,7 +57,7 @@ bindsym $mod+q exec $browser
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -205,8 +205,8 @@ for_window [class="^.*"] border pixel 2
 # bindsym $mod+Shift+n exec --no-startup-id ~/dotfiles/bin/resolution
 
 # # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # Alsa audio controls.
 # bindsym $mod+Shift+comma exec ~/.config/i3/scripts/alsa restore
