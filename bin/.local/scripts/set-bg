@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Check if feh is installed
+if ! command -v feh &> /dev/null
+then
+    echo "feh is not installed. Aborting."
+    exit 1
+fi
+
+# Check if rofi is installed
+if ! command -v rofi &> /dev/null
+then
+    echo "rofi is not installed. Aborting."
+    exit 1
+fi
+
+path="$HOME/Pictures/wallpapers/"
+files=($(ls $path))
+selected=$(printf '%s\n' "${files[@]}" | rofi -dmenu -p "Select a file")
+
+if [ -n "$selected" ]; then
+    # Set the desktop background to the specified image file
+    feh --bg-scale "$path$selected"
+fi
+
