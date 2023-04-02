@@ -8,8 +8,12 @@
 
 Example:
 
-```
+```bash
 stow nvim
+```
+
+```bash
+stow */ # Everything (the '/' ignores the README)
 ```
 
 ### TODO
