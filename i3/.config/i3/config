@@ -208,6 +208,11 @@ for_window [class="^.*"] border pixel 2
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
+# Printscreen section
+bindsym Print exec "flameshot gui"
+# full screenshot
+bindsym Shift+Print exec "flameshot full"
+
 # Alsa audio controls.
 # bindsym $mod+Shift+comma exec ~/.config/i3/scripts/alsa restore
 # bindsym $mod+semicolon exec ~/.config/i3/scripts/alsa down Headphone
