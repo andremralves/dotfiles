@@ -11,6 +11,7 @@ o.ignorecase = true     -- ignorecase on search
 o.termguicolors = true  -- better colors i think
 --o.pumblend = 20         -- popup menus transparency
 o.splitright = true
+o.clipboard = "unnamedplus"
 
 -- window-local options
 wo.number = true
@@ -27,6 +28,7 @@ o.textwidth = 79       -- break line at 79
 
 vim.cmd([[
 	autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2 
+	autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2 softtabstop=2 
 	autocmd FileType typescript setlocal shiftwidth=2 tabstop=2 softtabstop=2 
 	autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2 softtabstop=2 
 	autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2 

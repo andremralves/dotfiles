@@ -39,6 +39,3 @@ map('n', '<c-j>' , '<c-w><c-j>', options)
 map('n', '<c-k>' , '<c-w><c-k>', options)
 map('n', '<c-l>' , '<c-w><c-l>', options)
 
--- Copy to clipboard
-map('n', '<leader>y' , '"+y', options)
-map('v', '<leader>y' , '"+y', options)
