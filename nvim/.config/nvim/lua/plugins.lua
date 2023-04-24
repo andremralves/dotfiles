@@ -55,8 +55,10 @@ return require('packer').startup({function()
     use 'windwp/nvim-autopairs'
 
     -- Statusline
-    use 'NTBBloodbath/galaxyline.nvim'
-    use 'windwp/windline.nvim'
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 
     -- Git
     use 'lewis6991/gitsigns.nvim'
