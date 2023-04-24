@@ -62,10 +62,19 @@ return require('packer').startup({function()
     use 'lewis6991/gitsigns.nvim'
 
     -- Theme
-    use 'folke/tokyonight.nvim'
+    -- use 'folke/tokyonight.nvim'
     --use {'dracula/vim', as = 'dracula'}
     --use 'overcache/NeoSolarized'
     --use 'shaunsingh/nord.nvim'
+    use({
+      'projekt0n/github-nvim-theme', tag = 'v0.0.x',
+      config = function()
+        require('github-theme').setup({
+          -- ...
+        })
+        vim.cmd('colorscheme github_dark_default')
+      end
+    })
 
     -- Terminal
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()

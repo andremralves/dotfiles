@@ -12,7 +12,7 @@ require('plugins-config/toggleterm')        -- Terminal sessions
 require('plugins-config/alpha')             -- Startup
 
 -- Colorscheme
-require('plugins-config/tokyonight')
+--require('plugins-config/tokyonight')
 --vim.cmd[[colorscheme dracula]]
 --vim.cmd[[colorscheme NeoSolarized]]
 --vim.cmd[[colorscheme nord]]

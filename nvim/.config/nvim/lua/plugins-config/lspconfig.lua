@@ -36,9 +36,9 @@ end
 -- lsp to use
 -- kotlin_language_server
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
-local servers = { 'pyright', 'html', 'cssls', 'tsserver', 'clangd', 'intelephense', 'intelephense', 'lua_ls', 'gopls'}
+local servers = { 'pyright', 'html', 'cssls', 'tsserver', 'clangd', 'intelephense', 'ocamllsp', 'lua_ls', 'gopls'}
 for _, lsp in pairs(servers) do
-  if lsp == 'intelephense' then
+  if lsp == 'intelephense' or lsp == "ocamllsp" then
     require('lspconfig')[lsp].setup {
       on_attach = on_attach,
       single_file_support = true,
