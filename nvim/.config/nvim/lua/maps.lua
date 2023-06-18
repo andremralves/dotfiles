@@ -13,7 +13,7 @@ map('n', '<leader><esc>', ':nohlsearch<cr>', options)
 map('n', '<leader>e', ':NvimTreeToggle<cr>', options)
 
 -- Open term
-map('n', '<leader><cr>', ':ToggleTerm<cr>', options)
+map('n', '<leader><cr>', ':ToggleTerm direction=float<cr>', options)
 
 -- Move up/down editor lines
 map('n', 'k', 'gk', options)

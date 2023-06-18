@@ -13,7 +13,10 @@ return require('packer').startup({function()
 
     -- LSP
     use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client 
-    use 'williamboman/nvim-lsp-installer' -- Lsp installer
+    use {
+      "williamboman/mason.nvim", -- Lsp installer
+      run = ":MasonUpdate" -- :MasonUpdate updates registry contents
+    }
 
     use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
@@ -79,9 +82,7 @@ return require('packer').startup({function()
     })
 
     -- Terminal
-    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-        require("toggleterm").setup()
-    end}
+    use {"akinsho/toggleterm.nvim", tag = '*'}
 
     -- Formatting
     -- use 'sbdchd/neoformat'

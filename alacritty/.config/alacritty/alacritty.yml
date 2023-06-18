@@ -6,9 +6,8 @@
 
 ## Import files (Colors, Fonts, Etc)
 import:
-  #- ~/.config/alacritty/tokyonight-storm.yml
-  - ~/.config/alacritty/tokyonight-night.yml
-  #- ~/.config/alacritty/nord.yml
+  #- ~/.config/alacritty/tokyonight-night.yml
+  - ~/.config/alacritty/github_dark_default.yaml
   - ~/.config/alacritty/fonts.yml
 
 ## Set environment variables

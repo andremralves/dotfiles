@@ -10,6 +10,7 @@ require('plugins-config/nvim-tree')         -- Side tree
 require('plugins-config/lualine')        -- Statusline
 require('plugins-config/toggleterm')        -- Terminal sessions
 require('plugins-config/alpha')             -- Startup
+require('plugins-config/mason')             -- Lsp Installer
 
 -- Colorscheme
 --require('plugins-config/tokyonight')
