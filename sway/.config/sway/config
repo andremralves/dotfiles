@@ -247,6 +247,9 @@ bindsym XF86MonBrightnessUp exec $HOME/.config/sway/scripts/brightness-handler.s
 bindsym XF86MonBrightnessDown exec $HOME/.config/sway/scripts/brightness-handler.sh dec
 # decrease screen brightness
 
+# Screenshots
+bindsym Print exec grim -g "$(slurp)" - | wl-copy
+
 workspace 6 output HDMI-A-1
 workspace 7 output HDMI-A-1
 workspace 8 output HDMI-A-1
