@@ -4,6 +4,11 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+
+# Screen capture troubleshooting
+#exec --no-startup-id dbus-update-activation-environment --all
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -68,7 +73,7 @@ input "type:keyboard" {
     xkb_layout br
     # xkb_layout us
     xkb_variant ,nodeadkeys
-    xkb_options caps:swapescape
+    # xkb_options caps:swapescape
 }
 
 input "type:touchpad" {

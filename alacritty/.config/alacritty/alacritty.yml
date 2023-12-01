@@ -8,7 +8,7 @@
 import:
   #- ~/.config/alacritty/tokyonight-night.yml
   #- ~/.config/alacritty/github_dark_default.yaml
-  #- ~/.config/alacritty/solarized-light.yaml
+  #- ~/.config/alacritty/solarized-dark.yaml
   - ~/.config/alacritty/gruvbox_dark.yaml
   - ~/.config/alacritty/fonts.yml
 
